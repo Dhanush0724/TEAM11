@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1200px;
+      margin: auto;
+      max-height: 1200px;
+    }
+    .div{
+      max-height: 10px;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px 16px;
+      height: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1px;
+      justify-content: space-evenly;
+      flex:1;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 8px;
+      margin: auto;
+    }
+
+    /* Create four equal columns that float next to each other */
+    .column {
+      float: left;
+      width: auto;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      /* content: ""; */
+      display: block;
+      clear: both;
+    }
+    .column {
+  flex: 1; /* Make all columns take equal width */
+  max-width: 300px; /* Set a maximum width for each column */
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+      height: 370px;
+      
+    }
+
+    /* Responsive layout - makes a two-column layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 70%;
+      margin-top: 40px;
+      background: rgb(119,43,176);
+      background: linear-gradient(45deg, rgba(119,43,176,0.938813025210084) 3%, rgba(43,176,139,0.938813025210084) 22%, rgba(78,107,159,0.938813025210084) 58%, rgba(37,189,233,1) 76%);
+    }
+    .img{
+      height: 100px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- MAIN (Center website) -->
+  <div class="main">
+    <h1>Find Jobs become a Freelancer</h1>
+    <hr>
+    <h2>PORTFOLIO</h2>
+    <p>Know about every Skill by just clicking 'View'</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="Assets/web.webp" alt="Mountains" style="max-width: 100%;">
+          <h3>Web Development</h3>
+          <a href="https://en.wikipedia.org/wiki/Web_development#:~:text=Web%20development%20is%20the%20work,businesses%2C%20and%20social%20network%20services." class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content" style="width: 100%;">
+          <img src="Assets/cloud.webp" alt="Lights" style="height: 120px; width: fit-content;">
+          <h3>Cloud Computing</h3>
+          <a href="https://en.wikipedia.org/wiki/Cloud_computing" class="button">View</a>
+          <p></p>
+        </div>
+        
+
+      </div>
+      <div class="column">
+        <div class="content" style="width: 290px; height: -10px;">
+          <img src="Assets/design.jpg" alt="Nature" style="width: 100%">
+          <h3>Design Engineer</h3>
+          <a href="https://en.wikipedia.org/wiki/Design_engineer" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/sales.jpg" alt="Mountains" style="width:100%">
+          <h3>Sales and Marketing</h3>
+          <a href="https://en.wikipedia.org/wiki/Union_of_Sales_and_Marketing_Professionals" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/data.webp" alt="Mountains" style="width:100%">
+          <h3>Data Science Engineer</h3>
+          <a href="https://en.wikipedia.org/wiki/Data_science" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/ai.jpg" alt="Mountains" style="width:100%">
+          <h3>Artificial Intelligence</h3>
+          <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/java.jpg" alt="Mountains" style="width:100%">
+          <h3>Java Developer</h3>
+          <a href="https://www.javatpoint.com/java-developer" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/network.jpg" alt="Mountains" style="width:100%">
+          <h3>Network Engineer</h3>
+          <a href="https://en.wikipedia.org/wiki/Network_engineering" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="content">
+          <img src="Assets/test.jpg" alt="Mountains" style="width:100%">
+          <h3>Test Engineer</h3>
+          <a href="https://en.wikipedia.org/wiki/Test_engineer" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/android.jpg" alt="Mountains" style="width:100%">
+          <h3>Android Developer</h3>
+          <a href="https://www.jobhero.com/career-guides/interviews/prep/what-is-an-android-developer" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/system.jpg" alt="Mountains" style="width:100%">
+          <h3>System Administrator</h3>
+          <a href="https://www.techtarget.com/searchnetworking/definition/system-administrator" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Assets/prodmanager.jpg" alt="Mountains" style="width:100%">
+          <h3>Product Manager</h3>
+          <a href="https://www.atlassian.com/agile/product-management" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN -->
+  </div>
+</body>
+</html>
